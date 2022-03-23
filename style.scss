@@ -1,0 +1,197 @@
+body,
+body *,
+body *::before,
+body *::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+
+	background: transparent;
+
+	font-family: inherit;
+	text-decoration: none;
+	outline: none;
+}
+
+ol,
+ul,
+li {
+	display: block;
+
+	list-style: none;
+}
+
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+a img {
+	border: none;
+}
+
+button,
+a {
+	cursor: pointer;
+
+	color: inherit;
+}
+
+textarea {
+	resize: none;
+}
+
+button,
+input,
+textarea,
+select {
+	appearance: none !important;
+	-webkit-appearance: none !important;
+
+	border-radius: 0;
+}
+
+body {
+	width: 100%;
+	min-height: 100vh;
+
+	background-color: #666;
+
+	font-family: "Roboto", sans-serif;
+
+	color: #666;
+}
+
+header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+
+	width: 100%;
+	height: 80px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 0px 10px;
+	background-color: #fff;
+
+	color: #666;
+
+	h1 {
+		font-size: 36px;
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+		font-weight: 400;
+	}
+
+	.aterial-icons {
+		width: 60px;
+		height: 60px;
+		font-size: 36px;
+	}
+	.material-icons {
+		font-family: "Material Icons";
+		font-weight: normal;
+		font-style: normal;
+		font-size: 36px;
+		display: inline-block;
+		line-height: 1;
+		text-transform: none;
+		letter-spacing: normal;
+		word-wrap: normal;
+		white-space: nowrap;
+		direction: ltr;
+	}
+}
+
+#root {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	max-width: 1200px;
+
+	margin: 0 auto 0;
+	padding: 100px 30px;
+
+	.card {
+		position: relative;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		width: 360px;
+
+		margin: 30px 30px;
+		padding: 40px;
+		border-radius: 2px;
+
+		background-color: #fff;
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+
+		h2.title {
+			margin-bottom: 20px;
+			border-bottom: 1px solid;
+
+			font-size: 36px;
+			font-weight: 700;
+		}
+
+		h3.sub {
+			margin-bottom: 10px;
+
+			font-size: 12px;
+			font-weight: 400;
+		}
+		p.text {
+			font-family: "Overpass", sans-serif;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 1.6em;
+		}
+
+		button {
+			position: absolute;
+			left: 50%;
+			bottom: -25px;
+
+			display: flex;
+			align-items: center;
+
+			width: 160px;
+			height: 50px;
+
+			padding-left: 25px;
+			background-color: #fff;
+			border: 1px solid #666;
+			border-radius: 25px;
+			box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+
+			font-size: 14px;
+
+			transform: translate(-50%, 0);
+
+			&:hover {
+				border: 1px solid #fff;
+				background-color: #666;
+
+				color: #fff;
+			}
+
+			span {
+				position: absolute;
+				right: -1px;
+				top: 50%;
+
+				font-size: 36px;
+
+				transform: translate(0, -50%);
+			}
+		}
+	}
+}
