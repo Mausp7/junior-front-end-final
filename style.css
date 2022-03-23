@@ -73,19 +73,21 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0px 10px;
+  padding: 0px 10px 0px 22px;
   background-color: #fff;
   color: #666;
 }
 
-header h1 {
-  font-size: 36px;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-weight: 400;
-}
-
 header button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -131,14 +133,11 @@ header .material-icons {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 280px;
-  min-height: 350px;
+  min-height: 340px;
   margin: 30px 30px;
   padding: 40px;
   border-radius: 2px;
@@ -149,7 +148,8 @@ header .material-icons {
 }
 
 #root .card h2.title {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid;
   font-size: 18px;
   font-weight: 400;
@@ -167,7 +167,7 @@ header .material-icons {
           align-items: center;
   width: 160px;
   height: 160px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   border-radius: 50%;
   background-color: #666;
   font-size: 80px;
