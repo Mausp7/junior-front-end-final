@@ -88,10 +88,18 @@ header {
 		font-weight: 400;
 	}
 
-	.aterial-icons {
+	button {
 		width: 60px;
 		height: 60px;
+
+		border-radius: 50%;
+		background-color: #666;
+
 		font-size: 36px;
+		color: #fff;
+	}
+
+	.aterial-icons {
 	}
 	.material-icons {
 		font-family: "Material Icons";
@@ -123,9 +131,11 @@ header {
 
 		display: flex;
 		flex-direction: column;
+		justify-content: space-between;
 		align-items: center;
 
-		width: 360px;
+		width: 280px;
+		min-height: 350px;
 
 		margin: 30px 30px;
 		padding: 40px;
@@ -134,25 +144,35 @@ header {
 		background-color: #fff;
 		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
 
+		color: #666;
+
 		h2.title {
 			margin-bottom: 20px;
 			border-bottom: 1px solid;
 
-			font-size: 36px;
-			font-weight: 700;
+			font-size: 18px;
+			font-weight: 400;
 		}
 
 		h3.sub {
-			margin-bottom: 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 160px;
+			height: 160px;
 
-			font-size: 12px;
+			margin-bottom: 10px;
+			border-radius: 50%;
+			background-color: #666;
+
+			font-size: 80px;
 			font-weight: 400;
+			text-align: center;
+			color: #fff;
 		}
 		p.text {
-			font-family: "Overpass", sans-serif;
-			font-size: 16px;
-			font-weight: 400;
-			line-height: 1.6em;
+			font-size: 18px;
+			font-weight: 700;
 		}
 
 		button {
@@ -185,7 +205,7 @@ header {
 
 			span {
 				position: absolute;
-				right: -1px;
+				right: 5px;
 				top: 50%;
 
 				font-size: 36px;
